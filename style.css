@@ -1,0 +1,665 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    background-color: #000000;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.hero {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(Image-1.jpg);
+    background-size: 69vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.5%;
+    padding-right: 8%;
+    padding-left: 8%;
+}
+
+.logo {
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.logo span {
+    color: #f9004d;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+li a::after {
+    content: '';
+    display: flex;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 5px;
+    left: 0;
+    top: 17px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+
+li a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+nav ul li a:hover {
+    color: #f9004d;
+    transition: 0.4s;
+}
+
+.btn {
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 10px 25px;
+    transition: 0.4s;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+    color: red;
+    background-color: white;
+    text-shadow: 2px 2px 10px rgba(68, 68, 66, 0.386);
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+
+h1 {
+    color: white;
+    margin: 4%, 0%, 4%, 0%;
+    font-size: 75px;
+}
+
+h3 {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+h4 {
+    color: #fcfcfc;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.newsletter form {
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+}
+
+.newsletter form input:first-child {
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid #f9004d;
+    outline: none;
+    border-radius: 30px;
+}
+
+.newsletter form input:nth-child(2) {
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: #f9004d;
+    color: white;
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+    top: 6px;
+    right: 6px;
+    cursor: pointer;
+}
+
+.newsletter form input:nth-child(2):hover {
+    background-color: rgb(198, 36, 74);
+}
+
+.content h1 span {
+    color: #f9004d;
+}
+
+.about {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #191919;
+}
+
+.about img {
+    height: auto;
+    width: 400px;
+}
+
+.about-text {
+    width: 500px;
+}
+
+.main {
+    width:100vw;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#image3{
+    mix-blend-mode: multiply;
+    /* filter: contrast(1); */
+    position: absolute;
+    left: 40%;
+    z-index: 1;
+    margin-bottom: 28%;
+}
+.about-text h2 {
+    position: relative;
+    color: white;
+    font-size: 75px;
+    z-index: 2;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about-text h5 {
+    position: relative;
+    z-index: 2;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+.about-text h5 span {
+    position: relative;
+    color: #f9004d;
+    z-index: 2;
+}
+
+.about-text p {
+    color: #fcfcfc;
+    position: relative;
+    letter-spacing: 1px;
+    z-index: 2;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+button {
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+
+button:hover {
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+
+.services {
+    background-color: #101010;
+    width: 100vw;
+    padding: 10px 0px;
+}
+
+.title h2 {
+    color: white;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.card {
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card i {
+    color: #f9004d;
+    font-size: 50px;
+    margin: 25px 0px;
+    display: block;
+    text-align: center;
+}
+
+.card h5 {
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+.para p {
+    color: #fcfcfc;
+    font-size: 16px;
+    margin-bottom: 25px;
+    line-height: 27px;
+}
+
+.card .button {
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+
+.card .button:hover {
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+
+.contact-me {
+    width: 100%;
+    height: 290px;
+    background: #191919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-me p {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.contact-me .button-two {
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+
+.contact-me .button-two:hover {
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+
+.My-cv {
+    width: 100%;
+    height: 290px;
+    background: #191919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.My-cv p {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.My-cv .button-two {
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+
+.My-cv .button-two:hover {
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: #101010;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p:nth-child(1) {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
+
+footer p:nth-child(2) {
+    color: white;
+    font-size: 17px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+}
+
+.social {
+    display: flex;
+}
+
+.social a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9004d;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social a:hover {
+    transform: scale(1.3);
+    transition: 0.3s;
+}
+
+.end {
+    position: absolute;
+    color: #f9004d;
+    bottom: 35px;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    .hero {
+        background-size: 100vw;
+        overflow-x: hidden;
+    }
+
+    nav {
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    .content {
+        left: 5%;
+    }
+
+    .about {
+        padding: 50px 0px;
+    }
+
+    .about img {
+        width: 300px;
+    }
+
+    .about-text {
+        width: 400px;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .about-text h2 {
+        font-size: 50px;
+    }
+
+    .about-text h5 {
+        font-size: 20px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+    }
+
+    .services {
+        padding: 50px 0px;
+    }
+
+    .title h2 {
+        font-size: 50px;
+    }
+
+    .box {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0px;
+    }
+
+    .card h5 {
+        font-size: 20px;
+    }
+
+    .para p {
+        font-size: 14px;
+    }
+
+    .contact-me {
+        height: 250px;
+    }
+
+    .contact-me p {
+        font-size: 25px;
+    }
+
+    .contact-me .button-two {
+        padding: 10px 25px;
+    }
+
+    .My-cv {
+        height: 250px;
+    }
+
+    .My-cv p {
+        font-size: 25px;
+    }
+
+    .My-cv .button-two {
+        padding: 10px 25px;
+    }
+
+    footer {
+        height: 350px;
+    }
+
+    footer p:nth-child(1) {
+        font-size: 25px;
+    }
+
+    footer p:nth-child(2) {
+        font-size: 15px;
+    }
+
+    .social a {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .end {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body{
+        min-height: 100vh;
+       width: 100vw;   
+        overflow-x: hidden;
+    }
+    .hero {
+        background-size: cover;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    nav ul li {
+        padding: 5px 15px;
+    }
+
+    .btn {
+        padding: 8px 20px;
+    }
+
+    .content {
+        left: 3%;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .about img {
+        width: 250px;
+    }
+
+    .about-text {
+        width: 300px;
+    }
+
+    .about-text h2 {
+        font-size: 40px;
+    }
+
+    .about-text h5 {
+        font-size: 18px;
+    }
+
+    .about-text p {
+        font-size: 14px;
+    }
+
+    .title h2 {
+        font-size: 40px;
+        justify-content: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .card h5 {
+        font-size: 18px;
+    }
+
+    .para p {
+        font-size: 12px;
+    }
+
+    .contact-me p {
+        font-size: 20px;
+    }
+
+    .contact-me .button-two {
+        padding: 8px 20px;
+    }
+
+    .My-cv p {
+        font-size: 20px;
+    }
+
+    .My-cv .button-two {
+        padding: 8px 20px;
+    }
+
+    footer p:nth-child(1) {
+        font-size: 20px;
+    }
+
+    footer p:nth-child(2) {
+        font-size: 14px;
+    }
+
+    .social a {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .end {
+        font-size: 10px;
+    }
+}
