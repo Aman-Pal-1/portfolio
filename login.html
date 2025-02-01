@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login & Sign Up | Portfolio</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="login.css" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <main>
+    <div class="lp-container">
+      <!-- Sign Up Form -->
+      <div class="lp-form lp-signup active">
+        <form action="#" method="post">
+          <h1>Create Account</h1>
+          <div class="lp-social-icons">
+            <a href="#" class="lp-icons"><i class="fab fa-google"></i></a>
+            <a href="#" class="lp-icons"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="lp-icons"><i class="fab fa-github"></i></a>
+            <a href="#" class="lp-icons"><i class="fab fa-linkedin"></i></a>
+          </div>
+          <span>or use your email for registration</span>
+          <input type="text" placeholder="Name" required />
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+          <button type="submit">Sign Up</button>
+          <p>Already have an account? <a href="#" id="signInBtn">Sign In</a></p>
+        </form>
+      </div>
+
+      <!-- Sign In Form -->
+      <div class="lp-form lp-signin">
+        <form action="#" method="post">
+          <h1>Sign In</h1>
+          <div class="lp-social-icons">
+            <a href="#" class="lp-icons"><i class="fab fa-google"></i></a>
+            <a href="#" class="lp-icons"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="lp-icons"><i class="fab fa-github"></i></a>
+            <a href="#" class="lp-icons"><i class="fab fa-linkedin"></i></a>
+          </div>
+          <span>or use your email account</span>
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+          <a href="#">Forgot your password?</a>
+          <button type="submit">Sign In</button>
+          <p>Don't have an account? <a href="#" id="signUpBtn">Sign Up</a></p>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- External JavaScript -->
+  <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Skills</title>
+    <link rel="stylesheet" href="skills.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #000000;
+        text-align: center;
+      }
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 1.5%;
+        padding-right: 8%;
+        padding-left: 8%;
+      }
+
+      .logo {
+        color: white;
+        font-size: 35px;
+        letter-spacing: 1px;
+        cursor: pointer;
+      }
+
+      .logo span {
+        color: #f9004d;
+      }
+
+      nav ul li {
+        list-style-type: none;
+        display: inline-block;
+        padding: 10px 25px;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        text-transform: capitalize;
+      }
+
+      li a::after {
+        content: "";
+        display: flex;
+        width: 100%;
+        height: 2px;
+        background-color: rgb(255, 0, 0);
+        border-radius: 5px;
+        left: 0;
+        top: 17px;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform 0.5s;
+      }
+
+      li a:hover::after {
+        transform-origin: left;
+        transform: scaleX(1);
+      }
+
+      nav ul li a:hover {
+        color: #f9004d;
+        transition: 0.4s;
+      }
+      .btn {
+        background-color: #f9004d;
+        color: white;
+        text-decoration: none;
+        border: 2px solid transparent;
+        font-weight: bold;
+        border-radius: 30px;
+        padding: 10px 25px;
+        transition: 0.4s;
+      }
+
+      .btn:hover {
+        transform: scale(1.2);
+        color: red;
+        background-color: white;
+        text-shadow: 2px 2px 10px rgba(68, 68, 66, 0.386);
+      }
+      .skills {
+        padding: 0 20px;
+      }
+      .skills-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      .skill {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 200px;
+      }
+      .skill i {
+        font-size: 40px;
+        color: #f9004d;
+      }
+      .progress-bar {
+        background: #ddd;
+        height: 10px;
+        border-radius: 5px;
+        margin-top: 10px;
+        position: relative;
+        overflow: hidden;
+      }
+      .progress {
+        height: 100%;
+        background: #f9004d;
+        width: 0;
+        transition: width 1s ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h2 class="logo">Portfo<span>lio</span></h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="skill.html">Skills</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <a href="login.html" target="_blank" class="btn">Log In</a>
+      </nav>
+    </header>
+
+    <section class="skills">
+      <h1>My Skills</h1>
+      <div class="skills-container">
+        <div class="skill">
+          <i class="fab fa-html5"></i>
+          <h3>HTML</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width: 90%"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <i class="fab fa-css3-alt"></i>
+          <h3>CSS</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width: 85%"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <i class="fab fa-js"></i>
+          <h3>JavaScript</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width: 75%"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <i class="fab fa-react"></i>
+          <h3>React</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width: 65%"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <i class="fas fa-database"></i>
+          <h3>SQL</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width: 70%"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
